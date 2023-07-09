@@ -9,18 +9,18 @@ const projects = [
     title: 'Calculadora',
     description: 'Desenvolvimento de calculadora simples utilizando JavaScript',
     link: 'https://calculadora-web-sooty.vercel.app/',
-    image: './img/calculadora.jpg',
+    image: '',
   },
   {
-    title: 'Projeto 2',
+    title: 'Site Mobiliaria',
     description: 'Descrição do Projeto 2.',
-    link: 'https://link-do-projeto-2.com',
+    link: 'https://mobiliaria.vercel.app/?vercelToolbarCode=IrEW1NlVMe8CIOu',
     image: 'https://caminho-da-imagem-2.jpg'
   },
   {
-    title: 'Projeto 3',
+    title: 'Lista de Tarefas',
     description: 'Descrição do Projeto 3.',
-    link: 'https://link-do-projeto-3.com',
+    link: 'https://lista-de-tarefas-beta-opal.vercel.app/?vercelToolbarCode=YAtlPUmuUJYyU3R',
     image: 'https://caminho-da-imagem-3.jpg'
   }
 ];
