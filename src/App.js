@@ -5,6 +5,7 @@ import foto from './img/1620946670858.jpg';
 import calculadora from './img/calculadora.jpg';
 import mobiliaria from './img/mobiliaria.jpg';
 import lista from './img/lista de tarefas.jpg';
+import FloatingButton from './FloatingButton';
 
 const projects = [
   {
@@ -31,7 +32,9 @@ const skills = ['HTML', 'JavaScript', 'CSS', 'React'];
 
 function App() {
   return (
+    
     <div className="App">
+      <FloatingButton />
       <header>
         <div className="top-bar">
           <div className="logo">
