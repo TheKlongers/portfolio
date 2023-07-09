@@ -3,25 +3,27 @@ import './App.css';
 import capa from './img/bg-pattern-card.svg';
 import foto from './img/1620946670858.jpg';
 import calculadora from './img/calculadora.jpg';
+import mobiliaria from './img/mobiliaria.jpg';
+import lista from './img/lista de tarefas.jpg';
 
 const projects = [
   {
     title: 'Calculadora',
     description: 'Desenvolvimento de calculadora simples utilizando JavaScript',
     link: 'https://calculadora-web-sooty.vercel.app/',
-    image: './img/calculadora.jpg',
+    image: calculadora,
   },
   {
     title: 'Site Mobiliaria',
     description: 'Descrição do Projeto 2.',
     link: 'https://mobiliaria.vercel.app/?vercelToolbarCode=IrEW1NlVMe8CIOu',
-    image: 'https://caminho-da-imagem-2.jpg'
+    image: mobiliaria
   },
   {
     title: 'Lista de Tarefas',
     description: 'Descrição do Projeto 3.',
     link: 'https://lista-de-tarefas-beta-opal.vercel.app/?vercelToolbarCode=YAtlPUmuUJYyU3R',
-    image: 'https://caminho-da-imagem-3.jpg'
+    image: lista
   }
 ];
 
