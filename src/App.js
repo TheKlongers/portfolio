@@ -2,14 +2,14 @@ import React from 'react';
 import './App.css';
 import capa from './img/bg-pattern-card.svg';
 import foto from './img/1620946670858.jpg';
-import foto from './img/calculadora.jpg';
+import calculadora from './img/calculadora.jpg';
 
 const projects = [
   {
     title: 'Calculadora',
     description: 'Desenvolvimento de calculadora simples utilizando JavaScript',
     link: 'https://calculadora-web-sooty.vercel.app/',
-    image: '',
+    image: './img/calculadora.jpg',
   },
   {
     title: 'Site Mobiliaria',
