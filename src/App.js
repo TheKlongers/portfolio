@@ -62,7 +62,7 @@ function App() {
           <h3>Klinger Hudson Ribeiro <span>, 23</span></h3>
           <p>Salvador - BA</p>
           <p>"Desenvolvedor web. 
-          Tenho cerca de 1 ano de experiência na área e estou em busca 
+          Tenho cerca de 2 anos de experiência na área e estou em busca 
           de uma oportunidade como desenvolvedor web júnior. 
           Sou pró-ativo, colaborativo e estou sempre disposto a 
           aprender e me adaptar a novas tecnologias. Estou animado 

@@ -50,9 +50,12 @@ a {
 header {
   padding: 20px;
   display: flex;
+  margin: auto;
+
 }
 
 .top-bar {
+  position:relative;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
@@ -114,17 +117,8 @@ nav ul li a:hover::after {
 }
 
 /* Estilos das seções */
-.section-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px;
-}
 
-.secao-formacao {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 200px;
-}
+
 
 .box {
   width: 350px;
@@ -133,10 +127,6 @@ nav ul li a:hover::after {
   border-radius: 20px;
   margin: auto;
   }
-
-.container1 {
-  margin: 200px;
-}
 
 .box   h3 {
       text-align: center;
@@ -261,17 +251,11 @@ footer {
   z-index: 999;
   transition: background-color 0.3s;
   cursor: pointer;
+  overflow: visible;
 }
 
 .floating-button.hovered {
   background-color: #555;
-}
-
-.button-icon,
-.button-options {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .button-icon {
@@ -285,15 +269,21 @@ footer {
 
 .button-options {
   position: absolute;
-  top: 110%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: none;
+  top: 50%;
+  right: calc(100% + 10px);
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, right 0.3s;
 }
 
-.button-options.visible {
-  display: flex;
-  gap: 10px;
+.floating-button.hovered .button-options {
+  opacity: 1;
+  pointer-events: auto;
+  right: calc(100% + 20px);
 }
 
 .button-options a {
@@ -312,4 +302,23 @@ footer {
 .button-options a:hover {
   background-color: #9B5DE5;
   color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .floating-button {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .button-icon {
+    font-size: 20px;
+  }
+
+  .button-options a {
+    width: 30px;
+    height: 30px;
+  }
 }
