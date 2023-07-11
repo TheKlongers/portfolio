@@ -116,6 +116,23 @@ nav ul li a:hover::after {
   margin-top: 40px;
 }
 
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+  
+  
+}
+
+.section-formacao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 200px;
+  
+  
+}
+
+
 /* Estilos das seções */
 
 

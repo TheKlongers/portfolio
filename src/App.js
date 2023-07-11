@@ -3,8 +3,8 @@ import './App.css';
 import capa from './img/bg-pattern-card.svg';
 import foto from './img/1620946670858.jpg';
 import calculadora from './img/calculadora.jpg';
-import mobiliaria from './img/mobiliaria.jpg';
-import lista from './img/lista de tarefas.jpg';
+import mobiliaria from './img/mobiliaria.png';
+import lista from './img/lista de tarefas.png';
 import FloatingButton from './FloatingButton';
 
 const projects = [
