@@ -55,7 +55,7 @@ function App() {
 
       <div className='Capa'>
       <section id="sobre">
-        <div className="section-content">
+        <div className="">
           <div className='box'>
         <img src={capa} className='capa'/>
           <img src={foto} className='foto'/>

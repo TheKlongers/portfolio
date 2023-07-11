@@ -22,13 +22,13 @@ const FloatingButton = () => {
         <FaWhatsapp />
       </div>
       <div className={`button-options ${isHovered ? 'visible' : ''}`}>
-        <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO_DE_TELEFONE" target="_blank" rel="noopener noreferrer">
+        <a href="https://api.whatsapp.com/send?phone=+5571991416585" target="_blank" rel="noopener noreferrer">
           <FaWhatsapp />
         </a>
-        <a href="mailto:SEU_EMAIL">
+        <a href="mailto:klingerribeiro@outlook.com">
           <FaEnvelope />
         </a>
-        <a href="https://www.linkedin.com/in/SEU_PERFIL_LINKEDIN" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/klinger-hudson-b5374a141/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
       </div>
