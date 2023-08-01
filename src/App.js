@@ -1,111 +1,52 @@
 import React from 'react';
 import './App.css';
-import capa from './img/bg-pattern-card.svg';
-import foto from './img/1620946670858.jpg';
-import calculadora from './img/calculadora.jpg';
-import mobiliaria from './img/mobiliaria.png';
-import lista from './img/lista de tarefas.png';
-import FloatingButton from './FloatingButton';
+import Navbar from '../src/Navbar/Navbar';
+import Sobre from '../src/Sobre/sobre';
+import Skills from '../src/SkillsMenu/SkillsMenu';
+import Projetos from '../src/ProjectCarousel/ProjectCarousel';
+import Rodape from '../src/Rodape/Rodape';
+import ContactButton from '../src/ContactButtons/ContactButtons';
 
-const projects = [
-  {
-    title: 'Calculadora',
-    description: 'Desenvolvimento de calculadora simples utilizando JavaScript',
-    link: 'https://calculadora-web-sooty.vercel.app/',
-    image: calculadora,
-  },
-  {
-    title: 'Site Mobiliaria',
-    description: 'Descrição do Projeto 2.',
-    link: 'https://mobiliaria.vercel.app/?vercelToolbarCode=IrEW1NlVMe8CIOu',
-    image: mobiliaria
-  },
-  {
-    title: 'Lista de Tarefas',
-    description: 'Descrição do Projeto 3.',
-    link: 'https://lista-de-tarefas-beta-opal.vercel.app/?vercelToolbarCode=YAtlPUmuUJYyU3R',
-    image: lista
-  }
-];
-
-const skills = ['HTML', 'JavaScript', 'CSS', 'React'];
 
 function App() {
   return (
     
     <div className="App">
-      <FloatingButton />
-      <header>
-        <div className="top-bar">
-          <div className="logo">
-            <h1>Portfólio</h1>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#formacao">Formação</a></li>
-              <li><a href="#projetos">Projetos</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div className="header-content">
-          
-        </div>
-      </header>
 
-      <div className='Capa'>
-      <section id="sobre">
-        <div className="">
-          <div className='box'>
-        <img src={capa} className='capa'/>
-          <img src={foto} className='foto'/>
-          <h3>Klinger Hudson Ribeiro <span>, 23</span></h3>
-          <p>Salvador - BA</p>
-          <p>"Desenvolvedor web. 
-          Tenho cerca de 2 anos de experiência na área e estou em busca 
-          de uma oportunidade como desenvolvedor web júnior. 
-          Sou pró-ativo, colaborativo e estou sempre disposto a 
-          aprender e me adaptar a novas tecnologias. Estou animado 
-          para fazer parte de uma equipe dinâmica e contribuir com 
-          soluções web."</p>
-          </div>
+      <ContactButton />
+
+      <section>
+        <div>
+          <Navbar />
         </div>
       </section>
-      <section id="formacao">
-        <div className="secao-formacao">
-          <h2>Formação</h2>
-          <div className="skills">
-            <h3>Habilidades</h3>
-            <ul>
-              {skills.map((skill, index) => (
-                <li key={index}>{skill}</li>
-              ))}
-            </ul>
-          </div>
-          <p>Coloque aqui informações sobre sua formação acadêmica.</p>
+    
+
+      <section id='sobre'>
+        <div>
+          <Sobre />
         </div>
       </section>
-      <section id="projetos">
-        <div className="section-content">
-          <h2>Projetos</h2>
-          <div className="project-container">
-            {projects.map((project, index) => (
-              <div className="project" key={index}>
-                <img src={project.image} alt={project.title} />
-                <div className="project-details">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">Ver projeto</a>
-                </div>
-              </div>
-            ))}
-          </div>
+
+      <section id='Habilidades'>
+        <div>
+          <Skills />
         </div>
       </section>
-      </div>
-      <footer>
-        <p>© {new Date().getFullYear()} Klinger Hudson Ribeiro</p>
-      </footer>
+
+      <section id='projetos'>
+        <div>
+          <Projetos />
+        </div>
+      </section>
+      
+      <section>
+        <div>
+        <Rodape />
+        </div>
+      </section>
+
+
     </div>
   );
 }

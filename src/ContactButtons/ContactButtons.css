@@ -1,0 +1,85 @@
+.floating-contact-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #9B5DE5;
+  border-radius: 50%;
+  z-index: 999;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.floating-contact-button.toggled {
+  background-color: #555;
+}
+
+.button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
+}
+
+.contact-options {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 10px);
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, right 0.3s;
+}
+
+.floating-contact-button.toggled .contact-options {
+  opacity: 1;
+  pointer-events: auto;
+  right: calc(100% + 20px);
+}
+
+.contact-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #9B5DE5;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.contact-options a:hover {
+  background-color: #9B5DE5;
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .floating-contact-button {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .button-icon {
+    font-size: 20px;
+  }
+
+  .contact-options a {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,43 @@
+/* components/Habilidades.css */
+.habilidades {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.habilidades h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Trebuchet MS';
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  font-size: 75px;
+  padding: 40px;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.skill img {
+  width: 80px;
+  height: 80px;
+}
+
+.skill span {
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Adicione a animação */
+.skill:hover {
+  transform: scale(0.8);
+  color: var(--primary-color);
+}

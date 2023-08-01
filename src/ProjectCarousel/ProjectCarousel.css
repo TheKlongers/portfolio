@@ -1,0 +1,62 @@
+/* src/components/ProjectCarousel.css */
+
+.carousel-container {
+
+  width: 60%;
+  margin: 150px auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+  
+}
+
+.carousel {
+  display: flex;
+  gap: 20px; /* Espaço entre os projetos */
+  
+}
+
+
+.project {
+  flex: 0 0 250px; 
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  
+}
+
+.project img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.project a {
+  display: block;
+  text-align: center;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.project a:hover {
+  background-color: #9B5DE5;
+}
+
+ h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Trebuchet MS';
+}

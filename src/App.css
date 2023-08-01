@@ -1,4 +1,8 @@
 /* Estilos gerais */
+html {
+  scroll-behavior: smooth 
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,6 +11,7 @@ body {
   color: #fff;
   background-image: url(./img/bg-pattern-card.svg);
   background-size: 10000px;
+  
 }
 
 
@@ -71,6 +76,7 @@ header {
   font-size: 24px;
   font-weight: bold;
   display: flex;
+  color: #333;
 }
 
 nav ul {
@@ -142,7 +148,7 @@ nav ul li a:hover::after {
   height: 450px;
   background: #fff;
   border-radius: 20px;
-  margin: auto;
+  margin: 150px auto 150px auto;
   }
 
 .box   h3 {
@@ -180,65 +186,6 @@ nav ul li a:hover::after {
 
 #sobre {
   color: #000;
-}
-
-#formacao {
-  color: #fff;
-}
-
-.skills {
-  margin-bottom: 20px;
-}
-
-.skills h3 {
-  margin-top: 0;
-}
-
-.project-container {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 300px;
-  height: 400px;
-  background-color: rgba(255, 255, 255, 0.9);
-  margin: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.project img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-.project h3 {
-  margin: 0;
-}
-
-.project p {
-  margin: 10px 0;
-}
-
-.project a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #9B5DE5;
-  color: #fff;
-  border-radius: 4px;
 }
 
 footer {
@@ -339,3 +286,40 @@ footer {
     height: 30px;
   }
 }
+
+/* styles.css */
+/* ...cores anteriores... */
+
+/* Estilos para telas menores, como smartphones */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    margin-right: 0;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .sobre img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .skill img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .carousel {
+    flex-wrap: wrap;
+  }
+
+  .slide {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
