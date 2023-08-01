@@ -2,10 +2,12 @@
 
 .carousel-container {
 
-  width: 60%;
+  
   margin: 150px auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   
   
   
@@ -14,13 +16,14 @@
 .carousel {
   display: flex;
   gap: 20px; /* Espaço entre os projetos */
+  justify-content: center;
   
 }
 
 
 .project {
   flex: 0 0 250px; 
-  margin: 10px;
+  margin: auto;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
