@@ -4,7 +4,7 @@ const projectsData = [
     {
       name: 'Institucional - Óticas Vida',
       link: 'https://oticas-vida-three.vercel.app/',
-      gif: '/src/img/Landingpage.gif',
+      gif: '/src/img/trippi print.jpg',
     },
     {
       name: 'LandignPage - Trippi',
