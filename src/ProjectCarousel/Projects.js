@@ -2,13 +2,13 @@
 
 const projectsData = [
     {
-      name: 'Calculadora',
-      link: 'https://calculadora-web-sooty.vercel.app/',
+      name: 'Institucional - Óticas Vida',
+      link: 'https://oticas-vida-three.vercel.app/',
       gif: '/src/img/Landingpage.gif',
     },
     {
-      name: 'LandignPage',
-      link: 'https://mobiliaria.vercel.app/',
+      name: 'LandignPage - Trippi',
+      link: 'https://trippi-six.vercel.app/',
       gif: '/assets/project2.gif',
     },
     {
