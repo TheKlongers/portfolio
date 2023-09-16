@@ -16,6 +16,11 @@ const projectsData = [
       link: 'https://mobiliaria.vercel.app/',
       gif: '/assets/project1.gif',
     },
+    {
+      name: 'Captura de leads - Agência de Viagens',
+      link: 'https://agencia-viagens-tau.vercel.app/',
+      gif: '/assets/project1.gif',
+    },
     
 
   ];
